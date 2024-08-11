@@ -1,1 +1,2 @@
-# my_program
+# My Program Management
+## by Najongchoon
