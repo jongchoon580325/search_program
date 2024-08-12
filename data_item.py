@@ -22,7 +22,9 @@ excel_filename = "data_item.xlsx"
 
 # 엑셀 파일 생성 (없을 시)
 if not os.path.exists(excel_filename):
-    df = pd.DataFrame(columns=["항목1", "항목2", "항목3"])  # 예시로 기본 열 이름 사용
+    df = pd.DataFrame(
+        columns=["국가", "증권사", "계좌번호", "종목명", "팈커명"]
+    )  # 예시로 기본 열 이름 사용
     df.to_excel(excel_filename, index=False)
 
 # 엑셀 파일 읽기
