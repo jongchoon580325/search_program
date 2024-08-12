@@ -17,6 +17,15 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtCore import Qt
 
+
+# 현재 실행 중인 스크립트의 디렉토리 경로를 얻는 코드
+def resource_path(relative_path):
+    """PyInstaller로 빌드할 때, 리소스 파일 경로를 가져옵니다."""
+    if hasattr(sys, "_MEIPASS"):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath("."), relative_path)
+
+
 # 엑셀 파일 이름
 excel_filename = "data_item.xlsx"
 
