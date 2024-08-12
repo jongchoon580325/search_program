@@ -1,3 +1,26 @@
 venv/
 git rm -r --cached venv/
 .DS_Store
+# PyInstaller 관련 파일들
+
+# 빌드 디렉토리
+/build/
+/dist/
+
+# PyInstaller 사양 파일
+*.spec
+
+# PyInstaller 임시 작업 파일
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.log
+
+# 환경 설정 파일
+*.venv
+.venv/
+
+# Vscode 설정 (Optional)
+.vscode/
